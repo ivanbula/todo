@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #f6d365, #fda385);
+    height: 100vh;
+}
+
+header h1{
+    color: rgb(253, 253, 253);
+    font-size: 2rem;
+}
+header,
+form{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 1rem;
+    border: none;
+    background: white;
+    font-size: 1rem;
+}
+form button{
+    cursor: pointer;
+    color: white;
+    background: #fda385;
+    transition: all .3s ease;
+}
+form button:hover{
+    color: #fda385;
+    background: white;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+.todo{
+    background: white;
+    margin: 0.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-item{
+    flex: 0 0 80%;
+    padding: 0 0.5rem;
+}
+.complete-btn, .deleted-btn{
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 1rem;
+    background: #ff6f47;
+    font-size: 1rem;
+    flex: 0 0 10%;
+}
+.complete-btn{
+    background: rgb(73, 216, 73);
+}
+
+.fa-trash, 
+.fa-check{
+    pointer-events: none;
+}
+
+.fall{
+    transform: translateY(8rem);
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
